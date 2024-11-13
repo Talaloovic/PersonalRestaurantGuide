@@ -1,6 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/restaurantListFragment">
 
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="ca.gbc.personalrestaurantguide.RestaurantListFragment"
+        android:label="Restaurant List"
+        tools:layout="@layout/fragment_restaurant_list">
+        <action
+            android:id="@+id/action_restaurantListFragment_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantDetailsFragment"
+        android:name="ca.gbc.personalrestaurantguide.RestaurantDetailsFragment"
+        android:label="Restaurant Details"
+        tools:layout="@layout/fragment_restaurant_details" />
 </navigation>

@@ -3,18 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:marginBottom="8dp">
 
+    <!-- Restaurant Name -->
     <TextView
-        android:id="@+id/text_view_name"
+        android:id="@+id/restaurantNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurant Name"
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <!-- Restaurant Address -->
     <TextView
-        android:id="@+id/text_view_address"
+        android:id="@+id/restaurantAddressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurant Address"

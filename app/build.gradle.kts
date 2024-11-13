@@ -1,10 +1,11 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android") // Kotlin plugin for Android
-    id("kotlin-kapt")
+    id("org.jetbrains.kotlin.android") // For Kotlin support
+    id("kotlin-kapt") // Enable kapt for annotation processing
 }
 
 android {
+    namespace = "ca.gbc.personalrestaurantguide" // Match the package name in AndroidManifest.xml
     compileSdk = 33
 
     defaultConfig {
@@ -42,11 +43,11 @@ dependencies {
     implementation("androidx.room:room-runtime:2.4.0")
     kapt("androidx.room:room-compiler:2.4.0") // Use kapt for Room compiler
 
-    // ViewModel and LiveData components
+    // ViewModel and LiveData components (for UI state management)
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
 
-    // Navigation components
+    // Navigation components (for fragment navigation)
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.0")
     implementation("androidx.navigation:navigation-ui-ktx:2.4.0")
 

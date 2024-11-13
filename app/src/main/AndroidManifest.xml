@@ -21,8 +21,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY_HERE"/>
 
-        <!-- Main Activity - entry point of the app -->
-        <activity android:name=".MainActivity">
+        <!-- Main Activity - entry point of the app with exported set to true -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -33,3 +35,4 @@
     </application>
 
 </manifest>
+
