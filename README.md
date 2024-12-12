@@ -1,7 +1,7 @@
 GROUP 80 COMP3074
 
-Ababakar, Talalovic
-Abdillahi, Ibrahim
-Ali, Ammar
-Eisazadeh, Sara
-Gabeyre, Ahmed
+- Talalovic Ababakar,
+- Ibrahim Abdillahi,
+- Ammar Ali
+- Sara Eisazadeh
+- Ahmed Gabeyre
